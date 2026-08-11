@@ -22,6 +22,7 @@ internal class Program
 
     private static async Task<int> Main(string[] args)
     {
+        Console.WriteLine("Starting MCP Server...");
         try
         {
             Azure.Mcp.Core.Areas.Server.Commands.ServiceStartCommand.ConfigureServices = ConfigureServices;
